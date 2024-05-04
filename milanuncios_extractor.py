@@ -27,9 +27,13 @@ def accept_cookies(page: Page):
         logging.info("Cookies accepted")
 
 
-def navigate_to_url(page: Page, url: str):
-    page.goto(url)
-    logging.info(f"Navigate to url: '{url}'")
+def navigate_to_url(page: Page, url: str, retries: int = 3):
+    try:
+        page.goto(url)
+        logging.info(f"Navigate to url: '{url}'")
+    except Exception:
+        logging.warning(f"Could not go to url '{url}'. Retrying ({retries} retries left).")
+        navigate_to_url(page, url, retries-1)
 
 
 def load_dynamic_elements(page: Page):
