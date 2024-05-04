@@ -31,9 +31,12 @@ def navigate_to_url(page: Page, url: str, retries: int = 3):
     try:
         page.goto(url)
         logging.info(f"Navigate to url: '{url}'")
-    except Exception:
+    except Exception as e:
         logging.warning(f"Could not go to url '{url}'. Retrying ({retries} retries left).")
-        navigate_to_url(page, url, retries-1)
+        if retries <= 0:
+            raise Exception(f"Max retries exceeded: {str(e)}")
+        else:
+            navigate_to_url(page, url, retries-1)
 
 
 def load_dynamic_elements(page: Page):
@@ -65,35 +68,49 @@ def __get_phone_number(page: Page) -> str:
         logging.warning("No phone number available.")
         return ''
 
+def extract_single_element(page: Page, link: str, retries: int = 3):
+    try:
+        page.goto("https://www.milanuncios.com" + link)
+        title = safe_get_inner_text(page, ".ma-AdDetail-title")
+        ref = safe_get_inner_text(page, ".ma-AdDetail-description-reference")
+        user = safe_get_inner_text(page, ".ma-UserOverviewProfileName")
+        location = safe_get_inner_text(page, ".ma-AdLocation-text")
+        professional = page.query_selector(".ma-UserOverviewProfessionalLabel") is not None
+        phone = __get_phone_number(page)
+        result = {
+            "title": title,
+            "ref": ref,
+            "user": user,
+            "phone": phone,
+            "location": location,
+            "professional": professional
+
+        }
+        logging.debug("Element extracted: " + str(result))
+        return result
+    except Exception as e:
+        logging.warning(f"Could not extract data for element '{link}'. Retrying ({retries} retries left).")
+        if retries <= 0:
+            logging.error(f"Max retries exceeded: {str(e)}")
+        else:
+            return extract_single_element(page, link, retries-1)
+
 
 def visit_links_and_save_results(page: Page, links: [str], target_folder: str):
     successful_records = []
     error_records = []
     for link in links:
         try:
-            page.goto("https://www.milanuncios.com" + link)
-            title = safe_get_inner_text(page, ".ma-AdDetail-title")
-            ref = safe_get_inner_text(page, ".ma-AdDetail-description-reference")
-            user = safe_get_inner_text(page, ".ma-UserOverviewProfileName")
-            location = safe_get_inner_text(page, ".ma-AdLocation-text")
-            professional = page.query_selector(".ma-UserOverviewProfessionalLabel") is not None
-            phone = __get_phone_number(page)
-            successful_records.append({
-                "title": title,
-                "ref": ref,
-                "user": user,
-                "phone": phone,
-                "location": location,
-                "professional": professional
-
-            })
-            logging.debug("Element extracted: " + str(successful_records[-1]))
-        except Exception as e:
-            logging.debug("Error: could not find phone number: ", repr(e))
+            single_element = extract_single_element(page, link)
+            successful_records.append(single_element)
+        except Exception:
             error_records.append(link)
 
+
     # Create dataframes
+    logging.debug(f"Writing {successful_records}")
     success_df = DataFrame.from_dict(successful_records)
+    logging.debug(f"Writing {error_records}")
     errors_df = DataFrame.from_dict(error_records)
 
     # Write CSVs

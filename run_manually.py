@@ -8,11 +8,12 @@ logging.basicConfig(
     format='%(asctime)s %(levelname)s %(module)s - %(funcName)s: %(message)s'
 )
 
+
 # Parameters
 endpoint = 'servicios-en-pontevedra'
 target_directory = 'results/servicios-en-pontevedra'
 headless = True
-initial_page = 36
+initial_page = 46
 
 # Run
 if __name__ == '__main__':
