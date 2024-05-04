@@ -1,0 +1,5 @@
+pandas
+requests
+fastparquet
+beautifulsoup4
+playwright

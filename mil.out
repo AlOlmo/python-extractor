@@ -1,0 +1,67 @@
+nohup: ignoring input
+2024-05-03 18:07:53,909 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/'
+2024-05-03 18:07:55,868 INFO milanuncios_extractor - accept_cookies: Cookies accepted
+2024-05-03 18:07:57,034 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=1'
+2024-05-03 18:11:10,483 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=2'
+2024-05-03 18:14:27,512 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=3'
+2024-05-03 18:17:13,184 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=4'
+2024-05-03 18:20:52,819 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=5'
+2024-05-03 18:24:55,309 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=6'
+2024-05-03 18:28:24,311 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=7'
+2024-05-03 18:31:11,137 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=8'
+2024-05-03 18:34:21,683 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=9'
+2024-05-03 18:37:36,226 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=10'
+2024-05-03 18:41:52,267 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=11'
+2024-05-03 18:45:44,802 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=12'
+2024-05-03 18:51:46,956 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=13'
+2024-05-03 18:55:46,664 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=14'
+2024-05-03 19:00:14,276 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=15'
+2024-05-03 19:04:23,605 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=16'
+2024-05-03 19:10:31,342 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=17'
+2024-05-03 19:13:55,649 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=18'
+2024-05-03 19:17:36,591 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=19'
+2024-05-03 19:20:26,895 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=20'
+2024-05-03 19:24:03,815 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=21'
+2024-05-03 19:27:15,466 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=22'
+2024-05-03 19:31:21,857 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=23'
+2024-05-03 19:34:17,374 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=24'
+2024-05-03 19:36:58,222 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=25'
+2024-05-03 19:39:29,360 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=26'
+2024-05-03 19:42:23,302 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=27'
+2024-05-03 19:45:40,840 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=28'
+2024-05-03 19:49:13,526 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=29'
+2024-05-03 19:52:39,109 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=30'
+2024-05-03 19:55:15,930 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=31'
+2024-05-03 19:58:08,062 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=32'
+2024-05-03 20:01:57,909 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=33'
+2024-05-03 20:04:55,524 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=34'
+2024-05-03 20:08:07,972 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=35'
+2024-05-03 20:08:11,650 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=36'
+2024-05-03 20:08:13,658 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=37'
+2024-05-03 20:08:16,257 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=38'
+2024-05-03 20:08:17,761 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=39'
+2024-05-03 20:08:19,970 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=40'
+2024-05-03 20:08:21,902 INFO milanuncios_extractor - navigate_to_url: Navigate to url: 'https://www.milanuncios.com/servicios-en-pontevedra/?pagina=41'
+Traceback (most recent call last):
+  File "/home/alberto/Desktop/Siweb/scrapper/python-extractor/milanuncios_extractor.py", line 124, in <module>
+    run_scraper(f"https://www.milanuncios.com/{endpoint}/", target_directory, headless=True)
+  File "/home/alberto/Desktop/Siweb/scrapper/python-extractor/milanuncios_extractor.py", line 100, in run_scraper
+    navigate_to_url(page, f'{url}?pagina={page_number}')
+  File "/home/alberto/Desktop/Siweb/scrapper/python-extractor/milanuncios_extractor.py", line 32, in navigate_to_url
+    page.goto(url)
+  File "/home/alberto/.local/lib/python3.10/site-packages/playwright/sync_api/_generated.py", line 8667, in goto
+    self._sync(
+  File "/home/alberto/.local/lib/python3.10/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/home/alberto/.local/lib/python3.10/site-packages/playwright/_impl/_page.py", line 500, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+  File "/home/alberto/.local/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/home/alberto/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/home/alberto/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 513, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 10000ms exceeded.
+Call log:
+navigating to "https://www.milanuncios.com/servicios-en-pontevedra/?pagina=42", waiting until "load"
+
